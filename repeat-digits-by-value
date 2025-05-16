@@ -1,0 +1,13 @@
+def repeat_by_digit_value(number):
+    number_str = str(number)
+    result_list = []
+    for digit in number_str:
+        digit_value = int(digit)
+        result_list.append(digit*digit_value)
+    return result_list
+
+num_input = input()
+repeated_parts = repeat_by_digit_value(num_input)
+
+for i in range(len(num_input)):
+    print(f"{num_input[i]}: {repeated_parts[i]}")
